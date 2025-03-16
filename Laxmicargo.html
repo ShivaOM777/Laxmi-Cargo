@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laxmi Cargo - Reliable Logistics Solutions</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#FF0000',secondary:'#FFF0E6'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+.nav-link.active { color: #2C3E50; border-bottom: 2px solid #2C3E50; }
+</style>
+</head>
+<body class="bg-white min-h-screen">
+<nav class="fixed top-0 w-full bg-white shadow-sm z-50">
+<div class="container mx-auto px-4 py-4 flex items-center justify-between">
+<a href="#" class="h-12">
+<img src="https://static.readdy.ai/image/087487d45d27a09bef26942ad9681878/e835687dbc57e5ee06990ef6a89b9197.png" alt="Laxmi Cargo Logo" class="h-full">
+</a>
+<div class="hidden md:flex items-center space-x-8">
+<a href="#home" class="nav-link active">Home</a>
+<a href="#services" class="nav-link hover:text-primary transition-colors">Services</a>
+<a href="#about" class="nav-link hover:text-primary transition-colors">About</a>
+<a href="#contact" class="nav-link hover:text-primary transition-colors">Contact</a>
+<div class="flex items-center space-x-2">
+<i class="ri-phone-line text-primary"></i>
+<a href="tel:+918264363177" class="text-primary font-medium">+91 8264 3631 77</a>
+</div>
+</div>
+<button class="md:hidden" id="menuBtn">
+<i class="ri-menu-line text-2xl"></i>
+</button>
+</div>
+</nav>
+<div class="mobile-menu hidden fixed w-full bg-white shadow-lg z-40 top-16" id="mobileMenu">
+<div class="container mx-auto px-4 py-4">
+<a href="#home" class="block py-2">Home</a>
+<a href="#services" class="block py-2">Services</a>
+<a href="#about" class="block py-2">About</a>
+<a href="#contact" class="block py-2">Contact</a>
+</div>
+</div>
+<main class="pt-16">
+<section id="home" class="relative h-[600px] bg-cover bg-center overflow-hidden" style="background-image: url('https://public.readdy.ai/ai/img_res/c978e012ed5a3f6b2d6a23c9238cc28b.jpg')">
+<div class="absolute inset-0 bg-black bg-opacity-50"></div>
+<div class="container mx-auto px-4 h-full flex items-center relative">
+<div class="max-w-2xl text-white">
+<h1 class="text-5xl font-bold mb-6">Your Trusted Partner in Global Logistics</h1>
+<p class="text-xl mb-8">Delivering reliable and efficient logistics services tailored to meet your business needs. Experience seamless supply chain solutions with Laxmi Cargo.</p>
+<button class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-opacity-90 transition-colors cursor-pointer whitespace-nowrap">Get Started</button>
+</div>
+</div>
+<div class="absolute right-0 top-1/2 -translate-y-1/2 w-1/2 h-full">
+<div class="truck-container absolute bottom-0 left-0">
+<div class="w-32 h-32 relative truck">
+<i class="ri-truck-line text-6xl text-white transform scale-x-[-1]"></i>
+</div>
+</div>
+<div class="plane-container absolute top-20 left-0">
+<div class="w-32 h-32 relative plane">
+<i class="ri-flight-takeoff-line text-6xl text-white"></i>
+</div>
+</div>
+</div>
+<style>
+@keyframes truckMove {
+0% { transform: translateX(-100%); }
+100% { transform: translateX(400%); }
+}
+@keyframes planeMove {
+0% { transform: translate(-100%, 0) rotate(15deg); }
+100% { transform: translate(400%, -100px) rotate(15deg); }
+}
+.truck {
+animation: truckMove 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+.plane {
+animation: planeMove 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+animation-delay: 2s;
+}
+</style>
+</section>
+<section id="services" class="py-20" style="background: linear-gradient(135deg, #FFE5D9, #FFCDB2)">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center mb-16">Our Services</h2>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white p-8 rounded shadow-lg hover:shadow-xl transition-shadow">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6">
+<i class="ri-truck-line text-2xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Transportation Management</h3>
+<p class="text-gray-600 mb-4">Optimize your transportation operations with our comprehensive management solutions.</p>
+<a href="#" class="text-primary font-medium hover:underline">Learn more</a>
+</div>
+<div class="bg-white p-8 rounded shadow-lg hover:shadow-xl transition-shadow">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6">
+<i class="ri-flow-chart text-2xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Supply Chain Optimization</h3>
+<p class="text-gray-600 mb-4">Streamline your supply chain with data-driven insights and efficient processes.</p>
+<a href="#" class="text-primary font-medium hover:underline">Learn more</a>
+</div>
+<div class="bg-white p-8 rounded shadow-lg hover:shadow-xl transition-shadow">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6">
+<i class="ri-stack-line text-2xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Inventory Management</h3>
+<p class="text-gray-600 mb-4">Keep track of your inventory with our advanced management systems.</p>
+<a href="#" class="text-primary font-medium hover:underline">Learn more</a>
+</div>
+</div>
+</div>
+</section>
+<section id="about" class="py-20">
+<div class="container mx-auto px-4">
+<div class="grid md:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="text-3xl font-bold mb-8">Why Choose Us?</h2>
+<div class="space-y-6">
+<div class="flex items-start">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mr-4">
+<i class="ri-check-line text-2xl text-primary"></i>
+</div>
+<div>
+<h3 class="text-xl font-semibold mb-2">Reliability & Punctuality</h3>
+<p class="text-gray-600">We pride ourselves on delivering your goods on time, every time.</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mr-4">
+<i class="ri-customer-service-2-line text-2xl text-primary"></i>
+</div>
+<div>
+<h3 class="text-xl font-semibold mb-2">Expert Team</h3>
+<p class="text-gray-600">Our experienced professionals ensure smooth operations.</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mr-4">
+<i class="ri-global-line text-2xl text-primary"></i>
+</div>
+<div>
+<h3 class="text-xl font-semibold mb-2">Global Network</h3>
+<p class="text-gray-600">Connected worldwide for seamless logistics solutions.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative h-[400px]">
+<img src="https://public.readdy.ai/ai/img_res/492ab6d7cc108da4f86cf6f4c6289b51.jpg" alt="About Us" class="w-full h-full object-cover rounded-lg shadow-lg">
+</div>
+</div>
+</div>
+</section>
+<section id="contact" class="py-20" style="background: linear-gradient(135deg, #FFE5D9, #FFCDB2)">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center mb-16">Contact Us</h2>
+<div class="grid md:grid-cols-2 gap-16">
+<div>
+<div class="bg-white p-8 rounded shadow-lg">
+<h3 class="text-2xl font-semibold mb-6">Get in Touch</h3>
+<div class="space-y-6">
+<div class="flex items-center">
+<div class="w-12 h-12 flex items-center justify-center">
+<i class="ri-phone-line text-2xl text-primary"></i>
+</div>
+<div>
+<p class="font-medium">Phone</p>
+<a href="tel:+918264363177" class="text-primary">+91 8264 3631 77</a><br>
+<a href="tel:+917990315804" class="text-primary">+91 7990 3158 04</a>
+</div>
+</div>
+<div class="flex items-center">
+<div class="w-12 h-12 flex items-center justify-center">
+<i class="ri-mail-line text-2xl text-primary"></i>
+</div>
+<div>
+<p class="font-medium">Email</p>
+<a href="mailto:laxmicargo295@gmail.com" class="text-primary">laxmicargo295@gmail.com</a>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-12 h-12 flex items-center justify-center">
+<i class="ri-map-pin-line text-2xl text-primary"></i>
+</div>
+<div>
+<p class="font-medium">Address</p>
+<p>Shop no: 7, Saarthi Residency,<br>Kumbariya, Surat,<br>Gujarat - 395010</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<form class="bg-white p-8 rounded shadow-lg">
+<div class="mb-6">
+<label class="block text-sm font-medium mb-2">Name</label>
+<input type="text" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-primary" required>
+</div>
+<div class="mb-6">
+<label class="block text-sm font-medium mb-2">Email</label>
+<input type="email" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-primary" required>
+</div>
+<div class="mb-6">
+<label class="block text-sm font-medium mb-2">Message</label>
+<textarea class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-primary h-32" required></textarea>
+</div>
+<button type="submit" class="w-full bg-primary text-white px-6 py-3 !rounded-button hover:bg-opacity-90 transition-colors cursor-pointer whitespace-nowrap">Send Message</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-black text-white py-12">
+<div class="container mx-auto px-4">
+<div class="grid md:grid-cols-4 gap-8">
+<div>
+<a href="#" class="h-12 mb-4 block">
+<img src="https://static.readdy.ai/image/087487d45d27a09bef26942ad9681878/e835687dbc57e5ee06990ef6a89b9197.png" alt="Laxmi Cargo Logo" class="h-full">
+</a>
+<p class="text-gray-400">Your trusted partner in global logistics solutions.</p>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+<ul class="space-y-2">
+<li><a href="#home" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+<li><a href="#services" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
+<li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+<li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Services</h4>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Transportation Management</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Supply Chain Optimization</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Inventory Management</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Connect With Us</h4>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-10 rounded-full hover:bg-opacity-20 transition-colors">
+<i class="ri-facebook-fill text-xl"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-10 rounded-full hover:bg-opacity-20 transition-colors">
+<i class="ri-twitter-fill text-xl"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-10 rounded-full hover:bg-opacity-20 transition-colors">
+<i class="ri-linkedin-fill text-xl"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-red-800 mt-12 pt-8 text-center text-gray-400">
+<p>&copy; 2025 Laxmi Cargo. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script>
+const menuBtn = document.getElementById('menuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+menuBtn.addEventListener('click', () => {
+mobileMenu.classList.toggle('hidden');
+});
+function startAnimations() {
+const trucks = document.querySelectorAll('.truck');
+const planes = document.querySelectorAll('.plane');
+trucks.forEach(truck => {
+truck.style.animation = 'none';
+truck.offsetHeight;
+truck.style.animation = null;
+});
+planes.forEach(plane => {
+plane.style.animation = 'none';
+plane.offsetHeight;
+plane.style.animation = null;
+});
+}
+document.addEventListener('DOMContentLoaded', startAnimations);
+document.addEventListener('DOMContentLoaded', function() {
+const navLinks = document.querySelectorAll('.nav-link');
+function setActiveLink() {
+const fromTop = window.scrollY;
+document.querySelectorAll('section').forEach(section => {
+const sectionTop = section.offsetTop - 100;
+const sectionBottom = sectionTop + section.offsetHeight;
+if (fromTop >= sectionTop && fromTop <= sectionBottom) {
+const correspondingLink = document.querySelector(`.nav-link[href="#${section.id}"]`);
+navLinks.forEach(link => link.classList.remove('active'));
+if (correspondingLink) {
+correspondingLink.classList.add('active');
+}
+}
+});
+}
+window.addEventListener('scroll', setActiveLink);
+setActiveLink();
+});
+document.querySelector('form').addEventListener('submit', function(e) {
+e.preventDefault();
+const formData = new FormData(e.target);
+const data = Object.fromEntries(formData);
+const notification = document.createElement('div');
+notification.className = 'fixed bottom-4 right-4 bg-green-500 text-white px-6 py-3 rounded shadow-lg';
+notification.textContent = 'Message sent successfully!';
+document.body.appendChild(notification);
+setTimeout(() => {
+notification.remove();
+}, 3000);
+e.target.reset();
+});
+</script>
+</body>
+</html>
